@@ -9,5 +9,8 @@ match oper:
     case "*":
         result=num1*num2
     case "/":
-        result=num1/num2
+        if num2==0:
+            print("Canoot divide by zero")
+        else:
+            result=num1/num2
 print(f"The result is {result}")
